@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script async type="text/javascript" src="lab.js" ></script>
+</head>
+<body>
+
+	<div class="calculator">
+
+		<!-- Display section -->
+		<div class="calculator-heading">Calculator</div>
+	
+		<div class="calculator-display">
+			<input class="calculator-display-input" type="text" id="input"  readonly="readonly" placeholder="0" style="color: #63187F;">
+			<input class="calculator-display-answer" type="text" id="answer" readonly="readonly" style="color: #D02870;">
+		</div>
+
+		<!-- Buttons section -->
+
+		<div class="calculator-buttons">
+
+			<input class="calculator-buttons-item" type="button" value="CE" onclick="clearScreen()" style="color: white; background-color: #EB176C;">
+			<input class="calculator-buttons-item" type="button" value="&#247;" onclick="typeOperand('/')">
+			<input class="calculator-buttons-item" type="button" value="x" onclick="typeOperand('*')">
+			<input class="calculator-buttons-item" type="button" value="&#8592;" onclick="backspace()" style="color: red;">
+			<br>
+
+			<input class="calculator-buttons-item" type="button" value="1" onclick="typeNumber(1)">
+			<input class="calculator-buttons-item" type="button" value="2" onclick="typeNumber(2)">
+			<input class="calculator-buttons-item" type="button" value="3" onclick="typeNumber(3)">
+			<input class="calculator-buttons-item" type="button" value="+" onclick="typeOperand('+')">
+			<br>
+			<input class="calculator-buttons-item" type="button" value="4" onclick=typetNumber(4)">
+			<input class="calculator-buttons-item" type="button" value="5" onclick="typeNumber(5)">
+			<input class="calculator-buttons-item" type="button" value="6" onclick="typeNumber(6)">
+			<input class="calculator-buttons-item" type="button" value="-" onclick="typeOperand('-')">
+			<br>
+			<input class="calculator-buttons-item" type="button" value="7" onclick="typeNumber(7)">
+			<input class="calculator-buttons-item" type="button" value="8" onclick="typeNumber(8)">
+			<input class="calculator-buttons-item" type="button" value="9" onclick="typeNumber(9)">
+			<input class="calculator-buttons-item" type="button" value="( )" onclick="brackets()">
+			<br>
+			<input class="calculator-buttons-item" type="button" value="+/-" onclick="typeOperand("+/-")">
+			<input class="calculator-buttons-item" type="button" value="0" onclick="typeNumber(0)" style="width: 125px">
+			<input class="calculator-buttons-item" type="button" value="=" onclick="evaluateResult()">
+			<br>
+		</div>
+
+
+	</div>
+
+</body>
+</html>

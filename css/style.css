@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Circe-Regular;
+  src: url(../fonts/Circe/Circe-Regular.ttf); }
+* {
+  padding: 0;
+  margin: 0; }
+
+.calculator {
+  max-width: 290px;
+  width: 100%;
+  position: relative;
+  margin: 50px auto;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 0 20px 20px;
+  background-image: url(../images/1.jpg);
+  background-repeat: no-repeat;
+  font-family: Circe-Regular; }
+  .calculator-heading {
+    color: white;
+    font-size: 130%;
+    text-align: center; }
+  .calculator-display {
+    width: 260px;
+    margin: auto; }
+    .calculator-display-input, .calculator-display-answer {
+      width: 260px;
+      height: 50px;
+      font-size: 210%;
+      text-align: right;
+      border: none; }
+    .calculator-display-input {
+      border-radius: 7px 7px 0 0;
+      box-shadow: 2px 2px 2px black;
+      color: grey; }
+    .calculator-display-answer {
+      border-radius: 0 0 7px 7px;
+      box-shadow: 2px 2px 2px black; }
+  .calculator-buttons {
+    margin-top: 10px;
+    width: 260px;
+    margin: 10px auto; }
+    .calculator-buttons-item {
+      height: 60px;
+      width: 60px;
+      color: blue;
+      font-size: 130%;
+      background-color: white;
+      margin: 1px;
+      border-radius: 8px;
+      border: none;
+      opacity: 0.7; }
+      .calculator-buttons-item:hover {
+        background-color: #cbcbcb;
+        cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
